@@ -24,7 +24,8 @@
     "eslint": "node_modules/.bin/eslint lib/",
     "start": "node index.js",
     "test": "jest test",
-    "test-watch": "jest test --watch"
+    "test-watch": "jest test --watch",
+    "postinstall": "cd ./node_modules && ln -sf ./zigbee-herdsman-zigate-adapter zigbee-herdsman"
   },
   "author": "Koen Kanters",
   "license": "GPL-3.0",
@@ -52,7 +53,7 @@
     "winston": "^3.3.3",
     "winston-syslog": "^2.4.4",
     "ws": "^7.3.1",
-    "zigbee-herdsman": "0.13.11",
+    "zigbee-herdsman-zigate-adapter": "0.13.6-dev-zigate-0.1",
     "zigbee-herdsman-converters": "12.0.194",
     "zigbee2mqtt-frontend": "0.2.17"
   },
